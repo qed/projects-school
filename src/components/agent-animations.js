@@ -483,7 +483,7 @@ function grok() {
       r.comp.classList.remove("focus");
       r.msgs.querySelectorAll(".bot:not(.gb-old)").forEach((m) => m.remove());
       r.cur.style.transform = "translate(180px,110px)";
-      every(520, () => (clock++, (r.clock.textContent = fmtClock(clock))));
+      const ticker = every(520, () => (clock++, (r.clock.textContent = fmtClock(clock))));
 
       await w(600);
       // LinkedIn
@@ -539,6 +539,7 @@ function grok() {
       if (instant) r.steps.textContent = "47";
       else await count(w, r.steps, steps, 47, 700, (v) => Math.round(v));
       await w(4200);
+      clearInterval(ticker);
     },
   };
 }
