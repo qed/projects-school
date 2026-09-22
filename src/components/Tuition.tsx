@@ -44,7 +44,8 @@ export function Tuition() {
               <div className="mt-9 flex flex-wrap items-center gap-4">
                 <a
                   href="mailto:hello@projects.school?subject=October%20cohort"
-                  className="plausible-event-name=Apply+Click group inline-flex items-center gap-2 rounded-full bg-accent px-6 py-3 text-sm font-medium text-canvas transition-transform duration-150 ease-out hover:-translate-y-px active:translate-y-0">
+                  data-umami-event="Apply Click"
+                  className="group inline-flex items-center gap-2 rounded-full bg-accent px-6 py-3 text-sm font-medium text-canvas transition-transform duration-150 ease-out hover:-translate-y-px active:translate-y-0">
                   
                   Apply for the October cohort
                   <ArrowRightIcon

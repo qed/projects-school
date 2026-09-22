@@ -8,11 +8,12 @@
     <!--
       Funnel instrumentation (plan R13). Diagnostic, not statistical: it exists to
       separate "nobody visited" from "visited and didn't click" before Sep 29.
-      tagged-events builds captures clicks on elements carrying a
-      `plausible-event-name=` class, so the mailto CTAs need no JS handler.
-      TODO: register projects.school in the analytics account; the tag is inert until then.
+      Umami tracks clicks on any element carrying a `data-umami-event` attribute,
+      so the mailto CTAs need no JS handler.
+      TODO: replace UMAMI_WEBSITE_ID below with the id from cloud.umami.is after
+      adding projects.school there. The tag is inert until then.
     -->
-    <script defer data-domain="projects.school" src="https://plausible.io/js/script.tagged-events.js"></script>
+    <script defer src="https://cloud.umami.is/script.js" data-website-id="UMAMI_WEBSITE_ID"></script>
   </head>
   <body>
     <div id="root"></div>
