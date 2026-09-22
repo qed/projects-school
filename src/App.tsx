@@ -1,5 +1,6 @@
 import { AgentCard } from './components/AgentCard';
 import { EmailLink } from './components/EmailLink';
+import { FirstProfitCard } from './components/FirstProfitCard';
 import type { AgentKey } from './components/AgentAnimation';
 
 const AGENTS: AgentKey[] = ['muse', 'instinct', 'grok', 'jev'];
@@ -23,6 +24,7 @@ export function App() {
           {AGENTS.map((agent) =>
           <AgentCard key={agent} agent={agent} />
           )}
+          <FirstProfitCard />
         </div>
 
         <section className="mt-[72px] border-t border-line pt-10">
