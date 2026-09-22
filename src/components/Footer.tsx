@@ -34,7 +34,6 @@ export function Footer() {
           </a>
           <a
             href="mailto:hello@projects.school"
-            data-umami-event="Footer Email"
             className="text-sm text-graphite transition-colors duration-150 ease-out hover:text-ink">
             
             hello@projects.school
