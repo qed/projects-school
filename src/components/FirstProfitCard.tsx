@@ -32,6 +32,6 @@ export function FirstProfitCard() {
       name="First Profit"
       job="Kid Business Builder"
       maker="firstprofit.school"
-      blurb="125 steps to help your kid make his first $10 in profit." />);
+      blurb="125 steps to help your kid make his first $10,000 in profit." />);
 
 }
