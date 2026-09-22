@@ -1,0 +1,15 @@
+version: 2
+updates:
+  # Keeps the SHA pins in deploy.yml current. Without this, pinning means the
+  # workflow silently rots — including through runtime deprecations.
+  - package-ecosystem: 'github-actions'
+    directory: '/'
+    schedule:
+      interval: 'weekly'
+
+  # The npm graph is the fragile half of this repo: it had no lockfile and two
+  # floating "latest" specifiers before Unit 1.
+  - package-ecosystem: 'npm'
+    directory: '/'
+    schedule:
+      interval: 'weekly'

@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>projects.school — one bot, one job</title>
+    <!--
+      Funnel instrumentation (plan R13). Diagnostic, not statistical: it exists to
+      separate "nobody visited" from "visited and didn't click" before Sep 29.
+      tagged-events builds captures clicks on elements carrying a
+      `plausible-event-name=` class, so the mailto CTAs need no JS handler.
+      TODO: register projects.school in the analytics account; the tag is inert until then.
+    -->
+    <script defer data-domain="projects.school" src="https://plausible.io/js/script.tagged-events.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/index.tsx"></script>
+  </body>
+</html>
